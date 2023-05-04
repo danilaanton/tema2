@@ -1,0 +1,62 @@
+<div class="table">
+  <button nz-button (click)="addItem()" nzType="primary">Add New Cat</button>
+
+  <nz-table #catTable [nzData]="cats" [nzPageSize]="8">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Breed</th>
+        <th>Sex</th>
+        <th>Age</th>
+        <th>Fur Pattern</th>
+        <th>Fur Color</th>
+        <th>Eyes</th>
+        <th>Health Status</th>
+        <th>Additional Comment</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cat of catTable.data; let i = index">
+        <td>
+          <img
+            class="cat-preview"
+            nz-image
+            [nzSrc]="cat.image"
+            [nzFallback]="fallback"
+            alt="cat image"
+          />
+        </td>
+        <td>{{ cat.name }}</td>
+        <td>{{ cat.breed }}</td>
+        <td>{{ cat.sex }}</td>
+        <td>{{ cat.months | age }}</td>
+        <td>{{ cat.furPattern }}</td>
+        <td>{{ cat.furColor | joinList }}</td>
+        <td>{{ cat.eyes | joinList }}</td>
+        <td>{{ cat.healthStatus | joinList }}</td>
+        <td>{{ cat.additionalComment }}</td>
+        <td>
+          <span
+            class="item-button"
+            nz-icon
+            nzType="delete"
+            nzTheme="fill"
+            (click)="deleteItem(i)"
+          ></span>
+        </td>
+        <td>
+          <span
+            class="item-button"
+            nz-icon
+            nzType="edit"
+            nzTheme="fill"
+            (click)="editItem(i)"
+          ></span>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>

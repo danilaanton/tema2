@@ -1,0 +1,232 @@
+[
+    {
+        "image": "https://i.pinimg.com/236x/47/72/3d/47723de18a45497654b67be3570b17d7.jpg",
+        "name": "Chip",
+        "breed": "Domestic Longhair",
+        "sex": "Female",
+        "months": 25,
+        "furPattern": "Caliby",
+        "furColor": [
+            "Black",
+            "Red",
+            "White"
+        ],
+        "eyes": [
+            "Green"
+        ],
+        "healthStatus": [
+            "Sterilised",
+            "Vaccinated"
+        ],
+        "additionalComment": "Dislikes men, very playful, likes white strings."
+    },
+    {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE0ZsqdBDzyJtrNd9gaPJtrzcWok7YtCZD7w&usqp=CAU",
+        "name": "Henrietta",
+        "breed": "Siamese",
+        "sex": "Female",
+        "months": 8,
+        "furPattern": "Color Point",
+        "furColor": [
+            "Lilac"
+        ],
+        "eyes": [
+            "Blue"
+        ],
+        "healthStatus": [
+            "Vaccinated"
+        ],
+        "additionalComment": "Shy, but very affectionate"
+    },
+    {
+        "image": "https://i.pinimg.com/564x/29/9f/85/299f855dbf3eba3ee516aaf81c074a21.jpg",
+        "name": "Cheddar",
+        "breed": "British Shorthair and Domestic Shorthair mixed breed",
+        "sex": "Male",
+        "months": 14,
+        "furPattern": "Tabby",
+        "furColor": [
+            "Red"
+        ],
+        "eyes": [
+            "Copper"
+        ],
+        "healthStatus": [
+            "Sterilised",
+            "Vaccinated",
+            "Special Needs"
+        ],
+        "additionalComment": "Friendly, has an extra toe and diabetes, slightly fat."
+    },
+    {
+        "image": "https://mybritishshorthair.com/wp-content/uploads/2019/01/british-shorthair-cinamon.webp",
+        "name": "Butterbean",
+        "breed": "Exotic Shorthair",
+        "sex": "Male",
+        "months": 54,
+        "furPattern": "Solid Color",
+        "furColor": [
+            "Cinnamon"
+        ],
+        "eyes": [
+            "Orange"
+        ],
+        "healthStatus": [
+            "Sterilised",
+            "Vaccinated"
+        ],
+        "additionalComment": "Really warm, quiet, likes being around kids."
+    },
+    {
+        "image": "https://lirp.cdn-website.com/6630b9ff/dms3rep/multi/opt/brown%20classic%20male%2013%20months%20old-250x187-640w.jpg",
+        "name": "Sockless",
+        "breed": "Maine Coon",
+        "sex": "Male",
+        "months": 10,
+        "furPattern": "Tabby",
+        "furColor": [
+            "Brown",
+            "White"
+        ],
+        "eyes": [
+            "Green"
+        ],
+        "healthStatus": [
+            "Vaccinated"
+        ],
+        "additionalComment": "Loves to play with string and climb on furniture."
+    },
+    {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQknLqviswmrK2Shra0Tfl17VVoJymJ3Hb3Mg&usqp=CAU",
+        "name": "Lottie",
+        "breed": "Bombay",
+        "sex": "Female",
+        "months": 5,
+        "furPattern": "Solid Color",
+        "furColor": [
+            "Black"
+        ],
+        "eyes": [
+            "Yellow"
+        ],
+        "healthStatus": [
+            "Vaccinated",
+            "Special Needs"
+        ],
+        "additionalComment": "Requires a special diet due to her sensitive stomach."
+    },
+    {
+        "image": "https://dnascience.plos.org/wp-content/uploads/sites/12/2021/09/jackie-1120x630.jpeg",
+        "name": "Milo",
+        "breed": "Domestic Shorthair",
+        "sex": "Male",
+        "months": 12,
+        "furPattern": "Tabby",
+        "furColor": [
+            "Brown"
+        ],
+        "eyes": [
+            "Green"
+        ],
+        "healthStatus": [
+            "Vaccinated"
+        ],
+        "additionalComment": "Loves to play with toys and cuddle."
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1598017720921-946225de6f04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "name": "Whiskers",
+        "breed": "Persian",
+        "sex": "Female",
+        "months": 28,
+        "furPattern": "Color Point",
+        "furColor": [
+            "Cream"
+        ],
+        "eyes": [
+            "Blue"
+        ],
+        "healthStatus": [
+            "Sterilized",
+            "Vaccinated"
+        ],
+        "additionalComment": "Loves to be pampered and brushed."
+    },
+    {
+        "image": "https://pictures-of-cats.org/wp-content/uploads/2021/04/Big-chunky-male-Scottish-Fold-made-in-Russia.jpg",
+        "name": "Oliver",
+        "breed": "Scottish Fold",
+        "sex": "Male",
+        "months": 43,
+        "furPattern": "Tabby",
+        "furColor": [
+            "Brown"
+        ],
+        "eyes": [
+            "Green"
+        ],
+        "healthStatus": [
+            "Vaccinated",
+            "Special Needs"
+        ],
+        "additionalComment": "Has a heart condition but loves to play and cuddle."
+    },
+    {
+        "image": "https://external-preview.redd.it/aT5sFaObWWPgPoEp50pJ1sq_jPRRy0Qs39KKfS2uEW0.jpg?auto=webp&s=2c6c64e30c8cf4c40934b3bd0cc635dfb8d0d4c1",
+        "name": "Lola",
+        "breed": "Domestic Shorthair",
+        "sex": "Female",
+        "months": 18,
+        "furPattern": "Tortoiseshell",
+        "furColor": [
+            "Black",
+            "Brown",
+            "Red"
+        ],
+        "eyes": [
+            "Yellow"
+        ],
+        "healthStatus": [
+            "Sterilised",
+            "Vaccinated"
+        ],
+        "additionalComment": "Enjoys lounging in the sun and being petted."
+    },
+    {
+        "image": "https://kittentoob.com/wp-content/uploads/2014/10/orange-cat.jpg",
+        "name": "Simba",
+        "breed": "Domestic Shorthair",
+        "sex": "Male",
+        "months": 8,
+        "furPattern": "Tabby",
+        "furColor": [
+            "Red"
+        ],
+        "eyes": [
+            "Green"
+        ],
+        "healthStatus": [
+            "Vaccinated"
+        ],
+        "additionalComment": "Very playful and loves to explore."
+    },
+    {
+        "image": "https://i.pinimg.com/originals/e5/f9/1e/e5f91ec1d4c21ed39a87dd0710f67dd5.jpg",
+        "name": "Mittens",
+        "breed": "Persian",
+        "sex": "Male",
+        "months": 8,
+        "furPattern": "Bicolor",
+        "furColor": [
+            "White",
+            "Black"
+        ],
+        "eyes": [
+            "Green"
+        ],
+        "healthStatus": [
+            "Vaccinated"
+        ],
+        "additionalComment": "Loves to cuddle and play with toy mice."
+    }
+]

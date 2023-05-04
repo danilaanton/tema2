@@ -1,0 +1,194 @@
+<div class="cat-form">
+  <form
+    nz-form
+    [formGroup]="catForm"
+    [nzLayout]="'vertical'"
+    (submit)="submit()"
+  >
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzFor="image">
+        Image URL
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <input
+          type="text"
+          id="image"
+          nz-input
+          [style.width.%]="100"
+          formControlName="image"
+        />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzRequired nzFor="name">
+        Name
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <input type="text" id="name" nz-input formControlName="name" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzRequired nzFor="breed">
+        Breed
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <input type="text" id="breed" nz-input formControlName="breed" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzRequired nzFor="sex">
+        Sex
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <nz-select id="sex" formControlName="sex" [nzMode]="'default'">
+          <nz-option
+            *ngFor="let option of sexOptions"
+            [nzLabel]="option"
+            [nzValue]="option"
+          >
+            {{ option }}
+          </nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzRequired nzFor="months">
+        Months Old
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <input type="number" id="months" nz-input formControlName="months" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzRequired nzFor="furPattern">
+        Fur Pattern
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <nz-select
+          id="furPattern"
+          formControlName="furPattern"
+          [nzMode]="'default'"
+        >
+          <nz-option
+            *ngFor="let option of furPatternOptions"
+            [nzLabel]="option"
+            [nzValue]="option"
+          >
+            {{ option }}
+          </nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzRequired nzFor="furColor">
+        Fur Colors
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <nz-select
+          id="furColor"
+          formControlName="furColor"
+          [nzMode]="'multiple'"
+        >
+          <nz-option
+            *ngFor="let option of furColorOptions"
+            [nzLabel]="option"
+            [nzValue]="option"
+          >
+            {{ option }}
+          </nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzRequired nzFor="eyes">
+        Eye Color
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <nz-select id="eyes" formControlName="eyes" [nzMode]="'multiple'">
+          <nz-option
+            *ngFor="let option of eyeOptions"
+            [nzLabel]="option"
+            [nzValue]="option"
+          >
+            {{ option }}
+          </nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="12" nzFor="healthStatus">
+        Health Status
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <nz-select
+          id="healthStatus"
+          formControlName="healthStatus"
+          [nzMode]="'multiple'"
+        >
+          <nz-option
+            *ngFor="let option of healthOptions"
+            [nzLabel]="option"
+            [nzValue]="option"
+          >
+            {{ option }}
+          </nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="12" nzFor="additionalComment">
+        Additional Comment
+      </nz-form-label>
+      <nz-form-control [nzErrorTip]="errorTemplate">
+        <textarea
+          nz-input
+          id="additionalComment"
+          formControlName="additionalComment"
+        ></textarea>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+
+  <ng-template #errorTemplate let-control>
+    <ng-container *ngIf="control.hasError('required')"
+      >Please fill in this field.</ng-container
+    >
+    <ng-container *ngIf="control.hasError('maxLength')"
+      >Text is too long.</ng-container
+    >
+    <ng-container *ngIf="control.hasError('min')"
+      >Impossibly few months.</ng-container
+    >
+    <ng-container *ngIf="control.hasError('max')"
+      >No cat has ever lived that long. Are you sure?</ng-container
+    >
+    <ng-container *ngIf="control.hasError('invalidEyeColorInput')"
+      >Too many or too few eye colors.</ng-container
+    >
+    <ng-container *ngIf="control.hasError('unspecifiedMismatch')"
+      >Mismatched eyes must be clarified through specifying the two colors, plus
+      the mismatch option.</ng-container
+    >
+  </ng-template>
+
+  <div class="button-options">
+    <button nz-button nzType="default" (click)="cancel()">Cancel</button>
+    <button
+      nz-button
+      nzType="primary"
+      (click)="submit()"
+      [disabled]="!catForm.valid"
+    >
+      Submit
+    </button>
+  </div>
+</div>

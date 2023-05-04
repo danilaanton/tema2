@@ -1,0 +1,14 @@
+[nz-form] {
+  width: auto;
+  padding: 10px;
+}
+
+.button-options{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+}
