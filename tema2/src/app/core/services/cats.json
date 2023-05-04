@@ -1,5 +1,6 @@
 [
     {
+        "id" : 0,
         "image": "https://i.pinimg.com/236x/47/72/3d/47723de18a45497654b67be3570b17d7.jpg",
         "name": "Chip",
         "breed": "Domestic Longhair",
@@ -21,6 +22,7 @@
         "additionalComment": "Dislikes men, very playful, likes white strings."
     },
     {
+        "id" : 1,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE0ZsqdBDzyJtrNd9gaPJtrzcWok7YtCZD7w&usqp=CAU",
         "name": "Henrietta",
         "breed": "Siamese",
@@ -39,6 +41,7 @@
         "additionalComment": "Shy, but very affectionate"
     },
     {
+        "id" : 2,
         "image": "https://i.pinimg.com/564x/29/9f/85/299f855dbf3eba3ee516aaf81c074a21.jpg",
         "name": "Cheddar",
         "breed": "British Shorthair and Domestic Shorthair mixed breed",
@@ -59,6 +62,7 @@
         "additionalComment": "Friendly, has an extra toe and diabetes, slightly fat."
     },
     {
+        "id" : 3,
         "image": "https://mybritishshorthair.com/wp-content/uploads/2019/01/british-shorthair-cinamon.webp",
         "name": "Butterbean",
         "breed": "Exotic Shorthair",
@@ -78,6 +82,7 @@
         "additionalComment": "Really warm, quiet, likes being around kids."
     },
     {
+        "id" : 4,
         "image": "https://lirp.cdn-website.com/6630b9ff/dms3rep/multi/opt/brown%20classic%20male%2013%20months%20old-250x187-640w.jpg",
         "name": "Sockless",
         "breed": "Maine Coon",
@@ -97,6 +102,7 @@
         "additionalComment": "Loves to play with string and climb on furniture."
     },
     {
+        "id" : 5,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQknLqviswmrK2Shra0Tfl17VVoJymJ3Hb3Mg&usqp=CAU",
         "name": "Lottie",
         "breed": "Bombay",
@@ -116,6 +122,7 @@
         "additionalComment": "Requires a special diet due to her sensitive stomach."
     },
     {
+        "id" : 6,
         "image": "https://dnascience.plos.org/wp-content/uploads/sites/12/2021/09/jackie-1120x630.jpeg",
         "name": "Milo",
         "breed": "Domestic Shorthair",
@@ -134,6 +141,7 @@
         "additionalComment": "Loves to play with toys and cuddle."
     },
     {
+        "id" : 7,
         "image": "https://images.unsplash.com/photo-1598017720921-946225de6f04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
         "name": "Whiskers",
         "breed": "Persian",
@@ -153,6 +161,7 @@
         "additionalComment": "Loves to be pampered and brushed."
     },
     {
+        "id" : 8,
         "image": "https://pictures-of-cats.org/wp-content/uploads/2021/04/Big-chunky-male-Scottish-Fold-made-in-Russia.jpg",
         "name": "Oliver",
         "breed": "Scottish Fold",
@@ -172,6 +181,7 @@
         "additionalComment": "Has a heart condition but loves to play and cuddle."
     },
     {
+        "id" : 9,
         "image": "https://external-preview.redd.it/aT5sFaObWWPgPoEp50pJ1sq_jPRRy0Qs39KKfS2uEW0.jpg?auto=webp&s=2c6c64e30c8cf4c40934b3bd0cc635dfb8d0d4c1",
         "name": "Lola",
         "breed": "Domestic Shorthair",
@@ -193,6 +203,7 @@
         "additionalComment": "Enjoys lounging in the sun and being petted."
     },
     {
+        "id" : 10,
         "image": "https://kittentoob.com/wp-content/uploads/2014/10/orange-cat.jpg",
         "name": "Simba",
         "breed": "Domestic Shorthair",
@@ -211,6 +222,7 @@
         "additionalComment": "Very playful and loves to explore."
     },
     {
+        "id" : 11,
         "image": "https://i.pinimg.com/originals/e5/f9/1e/e5f91ec1d4c21ed39a87dd0710f67dd5.jpg",
         "name": "Mittens",
         "breed": "Persian",

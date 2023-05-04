@@ -35,9 +35,9 @@ export class TableComponent {
   ngOnInit(): void {
     this.cats = this.catService.cats;
     this.route.queryParams.subscribe((res) => {
-      if (this.route.snapshot.queryParamMap.has('listIndex')) {
-        const index = res['listIndex'];
-        this.updateModal(index);
+      if (this.route.snapshot.queryParamMap.has('catId')) {
+        const id = res['catId'];
+        this.updateModal(id);
       }
       else if (this.route.snapshot.queryParamMap.has('createNew')){
         this.createModal();
@@ -55,34 +55,31 @@ export class TableComponent {
     });
   }
 
-  getItem(index: number) {
-    this.catService.get(index);
+  getItem(id: number) {
+    this.catService.get(id);
   }
 
-  deleteItem(index: number) {
-    this.catService.delete(index);
+  deleteItem(id: number) {
+    this.catService.delete(id);
   }
 
-  editItem(index: number) {
+  editItem(id: number) {
     this.router.navigate([], {
       relativeTo: this.route,
       queryParams: {
-        listIndex: index,
+        catId: id,
       },
       queryParamsHandling: 'merge',
     });
   }
 
-  updateModal(index: number): void {
-
-    if (index < 0 || index > this.cats.length) return;
-
+  updateModal(id: number): void {
     const modal = this.modal.create<FormComponent>({
       nzTitle: 'Edit cat',
       nzContent: FormComponent,
       nzViewContainerRef: this.viewContainerRef,
       nzComponentParams: {
-        cat: this.catService.get(index),
+        cat: this.catService.get(id),
       },
       nzData: {
         favoriteLibrary: 'angular',
@@ -91,7 +88,7 @@ export class TableComponent {
       nzCentered: true,
       nzBodyStyle:{overflowY: 'scroll'},
       nzOnOk: (instance) => {
-        this.catService.update(index, instance.catForm.value);
+        this.catService.update(id, instance.catForm.value);
         this.resetRoute();
       },
       nzOnCancel: () => this.resetRoute(),
@@ -126,7 +123,7 @@ export class TableComponent {
   resetRoute() {
     this.router.navigate([], {
       queryParams: {
-        listIndex: null,
+        catId: null,
         createNew: null
       },
       relativeTo: this.route,

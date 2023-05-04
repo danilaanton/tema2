@@ -10,6 +10,7 @@ import catData from './cats.json';
 export class CatService {
   private catList: Cat[] = catData;
   catListSubject = new Subject<Cat[]>();
+  private increment: number = this.catList.length;
 
   constructor() {}
 
@@ -22,24 +23,36 @@ export class CatService {
     this.catListSubject.next(catsToSet);
   }
 
-  get(index: number): Cat {
-    return this.catList[index];
+  get(id: number): Cat {
+    const found = this.catList.filter(x => x.id == id);
+    if(found.length == 0)
+      return this.getEmptyCat();
+    return found[0];
   }
 
-  delete(index: number) {
-    this.catList.splice(index, 1);
+  delete(id: number) {
+    const found = this.catList.filter(x => x.id == id);
+    if(found.length == 0)
+      return;
+
+    this.catList.splice(this.catList.indexOf(found[0]), 1);
     this.catListSubject.next(this.catList);
   }
 
   create(cat: Cat) {
+    cat.id = this.increment;
     this.catList.push(cat);
+    this.increment++;
     this.catListSubject.next(this.catList);
   }
 
-  update(index: number, cat: Cat) {
-    if (index < 0 || index >= this.catList.length) return;
+  update(id: number, cat: Cat) {
+    const found = this.catList.filter(x => x.id == id);
+    if(found.length == 0)
+      return;
 
-    this.catList[index] = cat;
+    cat.id=id;
+    this.catList[this.catList.indexOf(found[0])] = cat;
     this.catListSubject.next(this.catList);
   }
 
@@ -49,6 +62,7 @@ export class CatService {
 
   getEmptyCat(): Cat {
     return {
+      id: -1,
       image: '',
       name: '',
       months: 0,

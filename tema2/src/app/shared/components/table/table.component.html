@@ -19,7 +19,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let cat of catTable.data; let i = index">
+      <tr *ngFor="let cat of catTable.data">
         <td>
           <img
             class="cat-preview"
@@ -44,7 +44,7 @@
             nz-icon
             nzType="delete"
             nzTheme="fill"
-            (click)="deleteItem(i)"
+            (click)="deleteItem(cat.id)"
           ></span>
         </td>
         <td>
@@ -53,7 +53,7 @@
             nz-icon
             nzType="edit"
             nzTheme="fill"
-            (click)="editItem(i)"
+            (click)="editItem(cat.id)"
           ></span>
         </td>
       </tr>
